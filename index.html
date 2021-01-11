@@ -1,24 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <style>
+      * {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+  max-width: 745px;
+}
+.border{
+  width: 745px;
+  margin: 0;
+  height: 2px;
+  background-color: black;
+}
+.picf img{
+  margin: 0;
+  width: 745px;
+  height: 100%;
+}
+.pica img{
+  margin: 0;
+  width: 745px;
+  height: 100%;
+}
+.gallery-section {
+  width: 100%;
+  padding: 0;
+  
+}
 
-<body>
-    <img src="./img/cutshin_1.jpg" alt="">
-    <img src="./img/cutshin_2.jpg" alt="">
-    <img src="./img/heart.png" alt="">
-    <img src="./img/Jinhan11.png" alt="">
-    <img src="./img/jinhan22.png" alt="">
-    <img src="./img/main-title-2.png" alt="">
-    <img src="./img/main-title-2_pink.png" alt="">
-    <img src="./img/main-title.png" alt="">
-    <img src="./img/tit_greeting_black.png" alt="">
-    <img src="./img/tit_greeting_gray.png" alt="">
-    <img src="./img/wedding_start.jpg" alt="">
-    
-</div>
-</body>
+.inner-width {
+  width: 100%;
+  max-width: 745px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section .gallery {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: left;
+}
+
+.gallery-section .image {
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img {
+  transform: scale(1.2) rotate(5deg);
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="border"></div>
+    <div class="picf">
+      <img src="https://hooney3000.github.io/web1/img/Jinhan11.png" alt="">
+    </div>
+
+
+    <div class="gallery-section">
+      <div class="inner-width">
+        <div class="gallery">
+
+          <a href="http://mcard.barunnfamily.com/Photos/202012/B3081838/72f0521d-0b51-4c9d-8128-0b37b2659cc9.jpeg" class="image">
+            <img src="http://mcard.barunnfamily.com/Photos/202012/B3081838/72f0521d-0b51-4c9d-8128-0b37b2659cc9.jpeg" alt="">
+        </a>
+
+        <a href="http://mcard.barunnfamily.com/Photos/202012/B3081838/d948417f-85fa-4a5f-9853-b92a456b51ee.jpeg" class="image">
+            <img src="http://mcard.barunnfamily.com/Photos/202012/B3081838/d948417f-85fa-4a5f-9853-b92a456b51ee.jpeg" alt="">
+        </a>
+
+        <a href="http://mcard.barunnfamily.com/Photos/202012/B3081838/3d378770-9e60-4707-82b0-ced869aea33b.jpeg" class="image">
+            <img src="http://mcard.barunnfamily.com/Photos/202012/B3081838/3d378770-9e60-4707-82b0-ced869aea33b.jpeg" alt="">
+        </a>
+
+        <a href="http://mcard.barunnfamily.com/Photos/202012/B3081838/2637b68b-a3b9-42d8-aba9-719ea11f2f04.jpeg" class="image">
+            <img src="http://mcard.barunnfamily.com/Photos/202012/B3081838/2637b68b-a3b9-42d8-aba9-719ea11f2f04.jpeg" alt="">
+        </a>
+
+        <a href="http://mcard.barunnfamily.com/Photos/202012/B3081838/f74264ce-152e-4284-9883-aad03a699d1a.jpeg" class="image">
+            <img src="https://hooney3000.github.io/web1/img/cutshin_1.jpg" alt="">
+        </a>
+
+        <a href="http://mcard.barunnfamily.com/Photos/202012/B3081838/4e92848f-b15a-4979-9730-31e116eefd52.jpeg" class="image">
+            <img src="https://hooney3000.github.io/web1/img/cutshin_2.jpg" alt="">
+        </a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="pica">
+    <img src="https://hooney3000.github.io/web1/img/jinhan22.png" alt="">
+  </div>
+
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+
+  </body>
 </html>
+
